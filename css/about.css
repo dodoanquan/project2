@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family:'Arial';
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+	background-color: #fff;
+}
+ul,ol,li{
+	list-style: none;
+}
+label{
+	font-weight: 700;
+}
+a{
+	text-decoration:none;
+	color:#017143;
+	font-weight: bold;
+	font-size:16px;
+}
+.container{
+	max-width: 1230px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo img{
+	max-width: 80px;
+}
+.menu__list{
+	display:flex;
+}
+.active{
+	background-color: #017143;
+}
+.active-a{
+	color:white;
+}
+.menu__list li{
+	padding:15px;
+	border-radius: 5px;
+	margin-right:5px;
+	transition: 1s;
+}
+.menu__list li:last-child{
+	margin-right: 0px;
+}
+.menu__list li:hover{
+	background-color: #017143;
+}
+.menu__list li:hover a{
+	color:white;
+}
+main{
+	margin-top:20px;
+	padding:40px 0;
+}
+.content{
+	width: 100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+.text{
+	padding: 30px 20px 20px 20px;
+}
+.text,.img{
+	width: 50%;
+}
+.text h2{
+	font-size: 45px;
+	line-height: 55px;
+	color:#017143;
+	font-weight: bold;
+}
+.sub-title{
+	font-size: 18px;
+	line-height: 23px;
+	font-weight: bold;
+	margin-top:5px;
+}
+.desc{
+	margin-top:25px;
+	font-size: 15px;
+	line-height: 23px;
+}
+.more{
+	margin-top:30px;
+}
+.more a{
+	font-size: 16px;
+	line-height: 24px;
+	border: 2px solid #017143;
+	padding: 7px 70px;
+	border-radius: 5px;
+	transition: 1s;
+}
+.more a:hover{
+	background-color: #017143;
+	color:white;
+}
+#content1 .img img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	object-fit: cover;
+}
+#content2 .text{
+	text-align:right;
+	background: #017143;
+}
+#content2 .text h2,
+#content2 .sub-title,
+#content2 .desc{
+	color:white;
+}
+#content2 .more a{
+	font-size: 16px;
+	line-height: 24px;
+	border: 2px solid white;
+	padding: 7px 70px;
+	border-radius: 5px;
+	transition: 1s;
+	color:white;
+}
+#content2 .more a:hover{
+	background-color: white;
+	color:#017143;
+}
+.img img{
+	width: 100%;
+	object-fit: cover;
+}
+footer{
+	background: #017143;
+}
+.footer{
+	padding:20px 0;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color:white;
+}
+.submit{
+	margin: 0 20px;
+}
+i{
+	margin-right:10px;
+}
+.footer div{
+	margin-top:10px;
+}
+
+@media (max-width: 991px){
+	header{
+		display:none;
+	}
+	#content1 .content{
+		flex-direction: column-reverse;
+	}
+	.text,.img{
+		width: 100%;
+	}
+	#content2 .text{
+		text-align: left;
+	}
+	.text h2{
+		font-size:35px;
+	}
+}

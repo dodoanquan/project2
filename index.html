@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Home</title>
+</head>
+<body>
+	<header>
+		<div class="container header">
+			<a class="logo" href="index.html">
+				<img src="images/logo.png">
+			</a>
+			<div class="toggle">
+				<i class="fa fa-bars button" aria-hidden="true"></i>
+			</div>
+			<div class="menu">
+				<ul class="menu__list">
+					<li class="active"><a href="index.html" class="active-a">Trang Chủ</a></li>
+					<li><a href="menu.html">THỰC ĐƠN</a></li>
+					<li><a href="news.html">TIN TỨC</a></li>
+					<li><a href="story.html">CÂU CHUYỆN</a></li>
+					<li><a href="aboutus.html">VỀ CHÚNG TÔI</a></li>
+				</ul>
+			</div>
+		</div>
+		<ul class="new">
+			<li><a href="index.html">Trang Chủ</a></li>
+			<li><a href="menu.html">THỰC ĐƠN</a></li>
+			<li><a href="news.html">TIN TỨC</a></li>
+			<li><a href="story.html">CÂU CHUYỆN</a></li>
+			<li><a href="aboutus.html">VỀ CHÚNG TÔI</a></li>
+		</ul>
+	</header>
+	<main>
+		<div class="slider">
+			<div class="circle"></div>
+			<div class="container">
+				<div class="slider__wrap">
+					<div class="slider__left">
+						<div class="slider__title">
+							<h2>Đây không chỉ là CÀ PHÊ
+								<div class="text">Đây là
+									<span>"STARBUCK"</span>
+								</div>
+							</h2>
+						</div>
+						<div class="slider__desc">
+							Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được, qua những bí quyết rang xay độc đáo, Starbuck Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế.
+						</div>
+						<div class="slider__more">
+							<a href="aboutus.html">KHÁM PHÁ THÊM</a>
+						</div>
+					</div>
+					<div class="slider__right">
+						<img src="images/img1.png" class="starburk">
+					</div>
+				</div>
+				<ul class="thumb">
+					<li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeColor('#017143')"></li>
+					<li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeColor('#eb7495')"></li>
+					<li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeColor('#d752b1')"></li>
+				</ul>
+				<ul class="social-internet">
+					<li><img src="images/facebook.png"></li>
+					<li><img src="images/instagram.png"></li>
+					<li><img src="images/twitter.png"></li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<script src="js/js.js"></script>
+</body>
+</html>
